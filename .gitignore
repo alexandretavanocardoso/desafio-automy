@@ -1,0 +1,15 @@
+# Build e binários
+bin/
+obj/
+out/
+
+# Diretórios do pacote NuGet
+**/packages/*
+*.nupkg
+
+# Diretórios do Teste
+TestResults/
+coverage/
+
+# Cache do Visual Studio
+.vs/

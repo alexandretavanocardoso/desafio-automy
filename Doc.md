@@ -20,6 +20,9 @@
 GetBattery_ShouldThrowException_WhenTokenServiceFails: Verifica se uma exceção é lançada quando o serviço de token falha.
 
 ### Frotend
+- Tela inicial simples, contendo:
+  - 2 abas "BATERIAS AGENDADAS" e "BATERIAS ANTERIORES", para filtrar as baterias anteriores é necessário marcar o checkbox "Trazer corridas anteriores"
+- Para filtrar basta clicar em "Pesquisar"
 
 ---
 
@@ -41,12 +44,12 @@ GetBattery_ShouldThrowException_WhenTokenServiceFails: Verifica se uma exceção
 ---
 
 ## Processo de build e deploy
-- Necessário apenas rodar o projeto localhost e testar.
+- Backend: Compilar normalmente no Visual Studio, caso for no VS Code, rodar "dotnet run --urls "http://localhost:5173""
+- Frontend: "yarn i" -> "yarn dev"
 
 ---
 
 ## Objeto de retorno
-
 ```json
 {
   "scheduled": [
@@ -66,53 +69,6 @@ GetBattery_ShouldThrowException_WhenTokenServiceFails: Verifica se uma exceção
       "horario_agendamento": "20h",
       "nome": "John Doe",
       "qtde_pessoas": "10",
-      "telefone": "5531991234567"
-    },
-    {
-      "data_agendamento": "12/05/2025",
-      "datetime_formulario": "06/05/2025 11:00:00",
-      "email": "john.doe@gmail.com",
-      "horario_agendamento": "20h",
-      "nome": "John Doe",
-      "qtde_pessoas": "20",
-      "telefone": "5531991234567"
-    },
-    {
-      "data_agendamento": "18/05/2025",
-      "datetime_formulario": "09/05/2025 14:20:00",
-      "email": "john.doe@gmail.com",
-      "horario_agendamento": "18h",
-      "nome": "John Doe",
-      "qtde_pessoas": "18",
-      "telefone": "5531991234567"
-    }
-  ],
-  "past": [
-    {
-      "data_agendamento": "20/04/2025",
-      "datetime_formulario": "16/04/2025 19:03:19",
-      "email": "john.doe@gmail.com",
-      "horario_agendamento": "20h",
-      "nome": "John Doe",
-      "qtde_pessoas": "12",
-      "telefone": "5531991234567"
-    },
-    {
-      "data_agendamento": "18/04/2025",
-      "datetime_formulario": "15/04/2025 12:30:00",
-      "email": "john.doe@gmail.com",
-      "horario_agendamento": "19h",
-      "nome": "John Doe",
-      "qtde_pessoas": "8",
-      "telefone": "5531991234567"
-    },
-    {
-      "data_agendamento": "25/04/2025",
-      "datetime_formulario": "20/04/2025 08:45:00",
-      "email": "john.doe@gmail.com",
-      "horario_agendamento": "21h",
-      "nome": "John Doe",
-      "qtde_pessoas": "15",
       "telefone": "5531991234567"
     }
   ]

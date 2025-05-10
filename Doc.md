@@ -74,3 +74,6 @@ GetBattery_ShouldThrowException_WhenTokenServiceFails: Verifica se uma exceção
   ]
 }
 ```
+
+### Google Sheet
+- https://1drv.ms/x/c/7e6eb5fda2216305/Ee4e4MxrTw9CiuCAl_YbCPcBSRD1DfzCEbebLuxPrt2dmg?e=KgUMtM

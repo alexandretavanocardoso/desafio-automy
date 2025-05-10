@@ -19,7 +19,7 @@
 - Para testar: "Teste" -> "Executar todos os testes"
 GetBattery_ShouldThrowException_WhenTokenServiceFails: Verifica se uma exceção é lançada quando o serviço de token falha.
 
-### Frotend
+### Frontend
 - Tela inicial simples, contendo:
   - 2 abas "BATERIAS AGENDADAS" e "BATERIAS ANTERIORES", para filtrar as baterias anteriores é necessário marcar o checkbox "Trazer corridas anteriores"
 - Para filtrar basta clicar em "Pesquisar"
@@ -44,8 +44,8 @@ GetBattery_ShouldThrowException_WhenTokenServiceFails: Verifica se uma exceção
 ---
 
 ## Processo de build e deploy
-- Backend: Compilar normalmente no Visual Studio, caso for no VS Code, rodar "dotnet run --urls "http://localhost:5173""
-- Frontend: "yarn i" -> "yarn dev"
+- Backend: Compilar normalmente no Visual Studio, caso for no VS Code, rodar "dotnet run"
+- Frontend: "yarn i" (para baixar dependências) -> "yarn dev" (para rodar aplicação)
 
 ---
 
@@ -53,6 +53,26 @@ GetBattery_ShouldThrowException_WhenTokenServiceFails: Verifica se uma exceção
 ```json
 {
   "scheduled": [
+    {
+      "data_agendamento": "10/05/2025",
+      "datetime_formulario": "24/04/2025 17:59:01",
+      "email": "john.doe@gmail.com",
+      "horario_agendamento": "20h",
+      "nome": "John Doe",
+      "qtde_pessoas": "25",
+      "telefone": "5531991234567"
+    },
+    {
+      "data_agendamento": "15/05/2025",
+      "datetime_formulario": "05/05/2025 17:59:01",
+      "email": "john.doe@gmail.com",
+      "horario_agendamento": "20h",
+      "nome": "John Doe",
+      "qtde_pessoas": "10",
+      "telefone": "5531991234567"
+    }
+  ],
+  "past": [
     {
       "data_agendamento": "10/05/2025",
       "datetime_formulario": "24/04/2025 17:59:01",
